@@ -58,9 +58,9 @@ def main():
     print('Name: ', emp.get_name())
     print('ID Number: ', emp.get_ID())
     print('Department: ', emp.get_department())
-    print('Gross Pay: ' emp.get_mon_sal())
+    print('Gross Pay: $' format(emp.get_mon_sal(), ',.2f'), sep=' ')
     Net_pay = emp.get_mon_sal() - ded2.get_chrg_amt() - ded4.get_chrg_amt() - ded5.get_chrg_amt()
-    print('Net Pay: ', Net_pay)
+    print('Net Pay: ', format(Net_pay, ',.2f'), sep=' ')
 
 
 main()
